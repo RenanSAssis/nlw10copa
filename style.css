@@ -102,8 +102,7 @@ header {
 .card ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-
+  gap: 10px;
   width: 220px;
 }
 
@@ -111,31 +110,38 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
-.card ul li + li {
-  padding-top: 24px;
-  border-top: 1px solid var(--card-color-line);
+.card ul figcaption {
+  font-size: 10px;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #e1e1e6;
+}
+
+.card ul li + figcaption {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--card-color-line);
 }
 
 .card ul li strong {
   font-weight: 750;
   font-size: 32px;
   line-height: 125%;
-
   color: #e1e1e6;
 }
 
 .card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .card h2,
 .card ul li strong,
 .card ul li img {
-  transition: transform 0.8s;
+  transition: transform 0.5s;
 }
 
 .card {
